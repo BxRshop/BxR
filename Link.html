@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購入リンク</title>
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/BxRshop/BxR/refs/heads/main/avi.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #040c23;
+            color: #ffffff;
+            padding: 20px;
+            margin: 0;
+            user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            -moz-user-select: none;
+            -khtml-user-select: none;
+        }
+        .content-wrapper {
+            width: 60%;
+            margin: 0 20%;
+            padding-top: 120px;
+        }
+        .profile-container {
+            background-color: #07122f;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        h1 {
+            color: #4980f7;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .profile-icon {
+            width: 100px;
+            height: 100px;
+            border: 2px solid #518afe;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .link-item {
+            margin-bottom: 15px;
+            font-size: 1em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .link-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: auto;
+            max-width: 100%;
+        }
+        .link-item a {
+            color: #518afe;
+            text-decoration: none;
+            transition: color 0.3s;
+            margin-left: 8px;
+        }
+        .link-item a:hover {
+            color: #3b65b6;
+            text-decoration: underline;
+        }
+        .icon-wrapper {
+            width: 32px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+        }
+        .twitter-icon, .discord-icon, .line-icon {
+            width: 24px;
+            height: 24px;
+            filter: invert(48%) sepia(84%) saturate(567%) hue-rotate(207deg) brightness(93%) contrast(97%);
+        }
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background-color: #040c23;
+            color: #4980f7;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            height: 100px;
+        }
+        .fixed-header .container {
+            width: 60%;
+            margin: 0 20%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .large-title {
+            font-size: 2em;
+            font-weight: bold;
+            color: #4980f7;
+            text-align: center;
+        }
+        .sns-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: transparent;
+            border: 2px solid #518afe;
+            color: #518afe;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s, border-color 0.3s;
+            margin-left: 10px;
+            height: 20px;
+        }
+        .sns-button:hover {
+            background-color: #518afe;
+            border-color: #3b65b6;
+            color: black;
+        }
+        .right-buttons {
+            display: flex;
+            justify-content: flex-end;
+        }
+        @media (max-width: 767px) {
+            .content-wrapper, .fixed-header .container {
+                width: 90%;
+                margin: 0 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="fixed-header">
+        <div class="container">
+            <div class="large-title">BxR</div>
+            <div class="right-buttons">
+                <a href="https://BxRshop.github.io/BxR/Twitter.html" class="sns-button" target="_blank">Twitter</a>
+                <a href="https://BxRshop.github.io/BxR/PSN.html" class="sns-button" target="_blank">PSN</a>
+                <a href="https://BxRshop.github.io/BxR/GTA.html" class="sns-button" target="_blank">GTA</a>
+            </div>
+        </div>
+    </header>
+    <div class="content-wrapper">
+        <div class="profile-container">
+            <h1>連絡先はこちら！</h1>
+            <img src="https://pbs.twimg.com/profile_images/1803328033878863872/4pwQiDEm_400x400.png" alt="プロフィールアイコン" class="profile-icon">
+            <div class="link-item">
+                <div class="link-content">
+                    <div class="icon-wrapper">
+                        <img src="https://img.icons8.com/?size=256&id=8824&format=png" alt="Twitter Icon" class="twitter-icon">
+                    </div>
+                    <strong>Twitterメイン:</strong> <a href="https://x.com/@iceQ" target="_blank">@iceQ</a>
+                </div>
+            </div>
+            <div class="link-item">
+                <div class="link-content">
+                    <div class="icon-wrapper">
+                        <img src="https://img.icons8.com/?size=256&id=8824&format=png" alt="Twitter Icon" class="twitter-icon">
+                    </div>
+                    <strong>Twitterサブ:</strong> <a href="https://x.com/@iceA" target="_blank">@iceA</a>
+                </div>
+            </div>
+            <div class="link-item">
+                <div class="link-content">
+                    <div class="icon-wrapper">
+                        <img src="https://img.icons8.com/?size=256&id=30888&format=png" alt="Discord Icon" class="discord-icon">
+                    </div>
+                    <strong>Discord:</strong> <a href="https://discord.gg/vkjSWsBxCM" target="_blank">公式サーバー</a>
+                </div>
+            </div>
+            <div class="link-item">
+                <div class="link-content">
+                    <div class="icon-wrapper">
+                        <img src="https://img.icons8.com/?size=256&id=38490&format=png" alt="LINE Icon" class="line-icon">
+                    </div>
+                    <strong>LINE:</strong> <a href="https://lin.ee/fOq5Jch" target="_blank">公式アカウント</a>
+                </div>
+            </div>
+            <div class="link-item">
+                <div class="link-content">
+                    <div class="icon-wrapper">
+                        <img src="https://img.icons8.com/?size=256w&id=12629&format=png" alt="LINE Icon" class="line-icon">
+                    </div>
+                    <strong>利用規約:</strong> <a href="https://BxRshop.github.io/BxR/TOS.html" target="_blank">購入前にお読みください</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        document.addEventListener('selectstart', event => event.preventDefault());
+        document.addEventListener('copy', event => event.preventDefault());
+        document.addEventListener('cut', event => event.preventDefault());
+        document.addEventListener('paste', event => event.preventDefault());
+        document.addEventListener('keydown', event => {
+            if (event.ctrlKey && (event.key === 'c' || event.key === 'C' || event.key === 'x' || event.key === 'X' || event.key === 'v' || event.key === 'V')) {
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>
