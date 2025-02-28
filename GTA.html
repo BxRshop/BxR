@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>カミングスーン - BxR</title>
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/BxRshop/BxR/refs/heads/main/avi.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #040c23;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            -moz-user-select: none;
+            -khtml-user-select: none;
+        }
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background-color: #040c23;
+            color: #4980f7;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .fixed-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .large-title {
+            font-size: 2em;
+            font-weight: bold;
+            color: #4980f7;
+        }
+        .sns-button {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: transparent;
+            border: 2px solid #518afe;
+            color: #518afe;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s, border-color 0.3s;
+            margin-left: 10px;
+        }
+        .sns-button:hover {
+            background-color: #518afe;
+            border-color: #3b65b6;
+            color: black;
+        }
+        .right-buttons {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .coming-soon-container {
+            text-align: center;
+            background-color: #07122f;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .coming-soon-title {
+            font-size: 3em;
+            color: #4980f7;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .coming-soon-text {
+            font-size: 1.2em;
+            color: #ffffff;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header class="fixed-header">
+        <div class="container">
+            <div class="large-title">BxR</div>
+            <div class="right-buttons">
+                <a href="https://BxRshop.github.io/BxR/TOS.html" class="sns-button" target="_blank">利用規約</a>
+                <a href="https://BxRshop.github.io/BxR/Twitter.html" class="sns-button" target="_blank">TWITTER</a>
+                <a href="https://BxRshop.github.io/BxR/PSN.html" class="sns-button" target="_blank">PSN</a>
+            </div>
+        </div>
+    </header>
+    <div class="coming-soon-container">
+        <h1 class="coming-soon-title">COMING SOON</h1>
+        <p class="coming-soon-text">新しいコンテンツがまもなく登場します。お楽しみに！</p>
+    </div>
+    <script>
+        // 右クリックやコピーなどの無効化
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        document.addEventListener('selectstart', event => event.preventDefault());
+        document.addEventListener('copy', event => event.preventDefault());
+        document.addEventListener('cut', event => event.preventDefault());
+        document.addEventListener('paste', event => event.preventDefault());
+        document.addEventListener('keydown', event => {
+            if (event.ctrlKey && (event.key === 'c' || event.key === 'C' || event.key === 'x' || event.key === 'X' || event.key === 'v' || event.key === 'V')) {
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>
